@@ -50,6 +50,8 @@ public with sharing class AttendeeEventsService {
       WHERE Attendee__c = :attendeeId AND Event__r.Start_DateTime__c < today
       WITH SECURITY_ENFORCED
     ];
+
+    
     return eventLists;
   }
 }
